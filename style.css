@@ -1,0 +1,22 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: red;
+}
+  
+  #container {
+    display: grid;
+    grid-gap: 0.5em;
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    
+    
+  }
+  
+  .grid-item {
+    padding: 1em;
+    border: 1px solid black;
+    text-align: center;
+  }

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>etch a sketch</title>
+</head>
+<body>
+    <header>
+        <h1>
+            Etch a Sketch
+        </h1>
+    </header>
+    <div class="menu">
+        <label for="grid-width">Choose grid size</label>
+        <input type="range" id="grid-width" name="grid-width" min="6" max="66" value="16">
+        <p id="range-value"></p>
+    </div>
+    <br>
+    <div id="container" class="grid-container"></div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
