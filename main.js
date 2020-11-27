@@ -1,8 +1,10 @@
 const container = document.getElementById("container");
 const slider = document.getElementById("grid-width");
 const sliderValue = document.getElementById("range-value");
+const color = document.getElementById('change-color');
 
 sliderValue.innerText = slider.value;
+
 
 slider.addEventListener("mousemove", changeValue);
 slider.addEventListener("mouseup", drawNewGrid);
@@ -30,7 +32,7 @@ function drawNewGrid(e) {
 
 function changeColor(e) {
     console.log(e);
-    e.target.style.backgroundColor = "red";
+    e.target.style.backgroundColor = `${color.value}`;
 }
 
 function startup() {
