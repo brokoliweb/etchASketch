@@ -2,11 +2,13 @@ const container = document.getElementById("container");
 const slider = document.getElementById("grid-width");
 const sliderValue = document.getElementById("range-value");
 const color = document.getElementById("change-color");
+const reset = document.getElementById('reset');
 
 sliderValue.innerText = slider.value;
 
 slider.addEventListener("input", changeValue);
 slider.addEventListener("input", drawNewGrid);
+reset.addEventListener('click', drawNewGrid);
 
 function changeValue(e) {
   sliderValue.innerText = slider.value;
