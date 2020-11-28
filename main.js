@@ -1,14 +1,12 @@
 const container = document.getElementById("container");
 const slider = document.getElementById("grid-width");
 const sliderValue = document.getElementById("range-value");
-const color = document.getElementById('change-color');
+const color = document.getElementById("change-color");
 
 sliderValue.innerText = slider.value;
 
-
-slider.addEventListener("mousemove", changeValue);
+slider.addEventListener("input", changeValue);
 slider.addEventListener("mouseup", drawNewGrid);
-
 
 function changeValue(e) {
   sliderValue.innerText = slider.value;
@@ -31,18 +29,17 @@ function drawNewGrid(e) {
 }
 
 function changeColor(e) {
-    console.log(e);
-    e.target.style.backgroundColor = `${color.value}`;
+  console.log(e);
+  e.target.style.backgroundColor = `${color.value}`;
 }
 
 function startup() {
-    
-    makeRows(slider.value);
+  makeRows(slider.value);
 
-const cells = document.querySelectorAll(".grid-item");
-console.log(cells);
+  const cells = document.querySelectorAll(".grid-item");
+  console.log(cells);
 
-cells.forEach(cell=> cell.addEventListener('click', changeColor));
+  cells.forEach((cell) => cell.addEventListener("click", changeColor));
 }
 
 startup();
