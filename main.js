@@ -6,7 +6,7 @@ const color = document.getElementById("change-color");
 sliderValue.innerText = slider.value;
 
 slider.addEventListener("input", changeValue);
-slider.addEventListener("mouseup", drawNewGrid);
+slider.addEventListener("input", drawNewGrid);
 
 function changeValue(e) {
   sliderValue.innerText = slider.value;
