@@ -1,15 +1,15 @@
 body {
   text-align: center;
-  background-color: #EDE6E4;
+  background-color: #ede6e4;
   font-family: monospace;
   font-size: 16px;
 }
 
 h1 {
-  color: #1D35F0;
+  color: #1d35f0;
   font-size: 2em;
 }
-  
+
 #container {
   display: grid;
   grid-gap: 0.1em;
@@ -18,15 +18,11 @@ h1 {
   width: 60vh;
   height: 60vh;
   margin: auto;
-    
-    
-    
 }
-  
+
 .grid-item {
-    
+  background-color: white;
   border: 0.1px solid black;
-   
 }
 
 .slider {
@@ -35,7 +31,6 @@ h1 {
   align-items: center;
   gap: 0.5em;
 }
-
 
 .color {
   display: flex;
@@ -46,13 +41,10 @@ h1 {
 
 #reset {
   padding: 0.2em 1em;
-  background-color: #E1EDD5;
+  background-color: #e1edd5;
   color: rgb(247, 0, 0);
   font-weight: bold;
 }
-
-
-
 
 @media only screen and (max-width: 450px) {
   #container {
