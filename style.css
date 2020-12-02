@@ -46,9 +46,51 @@ h1 {
   font-weight: bold;
 }
 
+footer {
+  width: 60vh;
+  margin: 2em auto;
+}
+
+.footer-wrapper {
+  display: flex;
+  margin-top: 10px;
+  background: #206DF6;
+  justify-content: space-between;
+  padding: .5em;
+  
+}
+
+#git-profile {
+  width: 50px;
+  height: auto;
+  border-radius: 50%;
+  margin: 1em;
+  
+}
+
+#git-profile:hover {
+  background: yellow;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  
+}
+
+a:hover {
+  color: yellow;
+  font-weight: bold;
+}
+
 @media only screen and (max-width: 450px) {
   #container {
     width: 80vw;
     height: 80vw;
+  }
+  
+  footer {
+    width: 80vw;
+    height: auto;
   }
 }
